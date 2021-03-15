@@ -1,0 +1,9 @@
+1. clone repo from github
+2. create virtual env inside feast folder(where manage.py file lives)
+3. python manage.py makemigrations 
+4. python manage.py migrate 
+5. python manage.py createsuperuser 
+6. python manage.py runserver
+7. go to admin page 
+8. create days 
+8. good to go
