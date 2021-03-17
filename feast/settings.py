@@ -25,7 +25,8 @@ SECRET_KEY = '$)r!)z^yhy%r5sg)g9jc@^qkc70xm8#kaw+g_x%3-480-7q)o0'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['feastfreedom-lb-1127302972.us-east-2.elb.amazonaws.com','13.59.202.53','feastfreedom.tk']
+
 
 
 # Application definition
@@ -80,10 +81,15 @@ WSGI_APPLICATION = 'feast.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'FFDB',
+        'USER': 'admin',
+        'PASSWORD': 'Algon328',
+        'HOST': 'projectdb.cs7fomjiky3v.us-east-2.rds.amazonaws.com',
+        'PORT': '3306',
     }
 }
+
 
 
 # Password validation
